@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #121214;
+    --primary-color: hsl(var(--base-color), 100%, 63%);
+    --base-color: 194;
+    --text-color: #FFFFFF;
+    --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background-color: transparent;
+     border: none;
+     cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.play svg fill,
+.pause svg fill,
+.sound-on svg fill {
+    background-color: var(--primary-color);
+}
+
+#timer {
+    font-size: 8.8rem;
+    display: flex;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background-color: var(--bg-primary-light);
+}
